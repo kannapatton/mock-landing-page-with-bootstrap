@@ -11,7 +11,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <!-- bg-secondary-subtle for light gray background in body  -->
+  <body class="bg-secondary-subtle">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
@@ -50,13 +51,18 @@
         </div>
       </div>
     </nav>
-    <div class="d-flex justify-content-center"><h1>Library</h1></div>
-    <div class="container">
-      <!-- container to hold our bootstrap row so we can utilize column and grid -->
 
+    <!-- bg-secondary for gray background in container -->
+    <div class="container bg-secondary">
+      <!-- container to hold our bootstrap row so we can utilize column and grid -->
+      <div class="row">
+        <p class="display-1 d-flex justify-content-center text-white">
+          Public Library
+        </p>
+      </div>
       <div class="row">
         <div class="col"></div>
-        <div class="col">
+        <div class="col-8">
           <div class="row align-items center">
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
@@ -106,6 +112,29 @@
           </div>
         </div>
         <div class="col"></div>
+        <div class="mb-3">
+          <!-- text-white to change text color to white -->
+          <label for="exampleFormControlInput1" class="form-label text-white"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-white"
+            >Curious about the services we provide? Drop us a line!</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Your Questions Here"
+          ></textarea>
+        </div>
       </div>
     </div>
 
