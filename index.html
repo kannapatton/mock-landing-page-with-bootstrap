@@ -61,6 +61,7 @@
         </p>
       </div>
       <div class="row">
+        <!-- made other col to space out and center pic carosel -->
         <div class="col"></div>
         <div class="col-8">
           <div class="row align-items center">
@@ -111,29 +112,68 @@
             </div>
           </div>
         </div>
+        <!-- made other col to space out and center pic carosel -->
         <div class="col"></div>
-        <div class="mb-3">
-          <!-- text-white to change text color to white -->
-          <label for="exampleFormControlInput1" class="form-label text-white"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label text-white"
-            >Curious about the services we provide? Drop us a line!</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="Your Questions Here"
-          ></textarea>
+
+        <!-- text-white to change text color to white
+          signup container -->
+        <div class="container bg-secondary mb-3">
+          <!-- used offset-lg-2 to center the form in the container when it is large view-->
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+              <!-- make sign up larger -->
+
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-white"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <div class="col">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label text-white"
+                  >Home Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control mb-3"
+                  id="exampleFormControlInput1"
+                  placeholder="1313 Mockingbird Lane"
+                />
+                <div class="form-label text-white">Sign Up Here</div>
+                <button type="button" class="btn btn-info mb-5">Submit</button>
+
+                <!-- questions? form -->
+                <!-- <div class="mb-3 "> -->
+
+                <textarea
+                  class="form-control mb-3"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Your Questions Here"
+                ></textarea>
+                <div class="form-label text-white">
+                  Curious about our services? Drop us a line!
+                </div>
+                <button type="button" class="btn btn-info">
+                  Submit Question
+                </button>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <!-- address, drop down for state, zip code, password submit button -->
+          <!-- col-md-8 to go slightly more than halfway across the page -->
+
+          <!--e new row with two columns one for state dropdown and one for zip -->
         </div>
       </div>
     </div>
